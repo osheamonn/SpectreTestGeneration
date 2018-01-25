@@ -1,6 +1,9 @@
 # Gitignore file taken from
 # https://github.com/github/gitignore/blob/master/Python.gitignore
 
+#NOTE: __create_test__.py is ignored as I use it as a scratch file with which to create tests.
+__create_test__.py
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
