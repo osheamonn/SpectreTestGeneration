@@ -14,7 +14,7 @@ def make_g(dim) -> np.ndarray:
     return np.tensordot(x,x,0)
 
 def make_inv_g(dim) -> np.ndarray:
-    x = np.array(range(7,dim+7))
+    x = np.array(range(1,dim+1))
     return np.tensordot(x,x,0)
 
 def make_dt_lapse() -> float:
@@ -76,6 +76,9 @@ def make_trace_k() -> float:
 
 def make_trace_spatial_christ(dim) -> np.ndarray:
     return np.array([3*i - 2 for i in range(dim)])
+
+def make_trace_spatial_christ_2(dim) -> np.ndarray:
+    return np.array([3*i - 2.5 for i in range(dim)])
 
 def make_dt_psi(dim) -> np.ndarray:
     return np.array([[i*j + 0.5 for j in range(dim+1)] for i in range(dim+1)])
